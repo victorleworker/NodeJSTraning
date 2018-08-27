@@ -9,6 +9,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "node-tests", "node-tests\no
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Node-web-server", "node-web-server\Node-web-server.njsproj", "{B1DC047F-9207-4BB1-A1C8-000D373BA6BA}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "node-chat-app", "node-chat-app\node-chat-app.njsproj", "{EC4CD76D-FEAC-4129-964E-F79D0921CD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1DC047F-9207-4BB1-A1C8-000D373BA6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1DC047F-9207-4BB1-A1C8-000D373BA6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1DC047F-9207-4BB1-A1C8-000D373BA6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4CD76D-FEAC-4129-964E-F79D0921CD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4CD76D-FEAC-4129-964E-F79D0921CD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4CD76D-FEAC-4129-964E-F79D0921CD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4CD76D-FEAC-4129-964E-F79D0921CD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
