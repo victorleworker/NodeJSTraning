@@ -27,6 +27,9 @@
     <Folder Include="node-chat-app" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="package.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\index.html">
       <SubType>Code</SubType>
     </Content>
