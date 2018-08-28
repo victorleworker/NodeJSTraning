@@ -3,21 +3,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <title>chat app</title>
 </head>
-<body>
-    <p>Wellcome  to the chat app</p>
+<body class="chat">
+    <div class="chat__sidebar">
+        <h3>People</h3>
+        <div id="users"></div>
+
+    </div>
+    <div class="chat__main">
+        <ol id="messages" class="chat__messages"></ol>
+        <div class="chat__footer">
+            <form id="message-form">
+                <input type="text" name="message" placeholder="Message" value="" autofocus autocomplete="off"/>
+                <button>Send</button>
+
+            </form>
+            <button id="send-location">Send location</button>
+        </div>
+
+    </div>
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-
-        socket.on('connect', () => {
-            console.log('connected to server');
-        });
-
-        socket.on('disconnect', () => {
-            console.log('disconnected from server');
-        });
-    </script>
+    <script src="./js/libs/jquery-3.3.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

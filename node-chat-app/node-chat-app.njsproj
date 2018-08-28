@@ -17,19 +17,34 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="public\js\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\libs\jquery-3.3.1.min.js" />
     <Compile Include="server\server.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\utils\message.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\utils\message.test.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\js\libs\" />
+    <Folder Include="public\css\" />
     <Folder Include="server\" />
     <Folder Include="node-chat-app" />
+    <Folder Include="server\utils\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="public\css\styles.css" />
     <Content Include="public\index.html">
       <SubType>Code</SubType>
     </Content>
