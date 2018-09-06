@@ -17,10 +17,16 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Compile Include="public\js\index.js">
+    <Compile Include="playground\time.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\js\chat.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\libs\deparam.js" />
     <Compile Include="public\js\libs\jquery-3.3.1.min.js" />
+    <Compile Include="public\js\libs\moment.js" />
+    <Compile Include="public\js\libs\mustache.js" />
     <Compile Include="server\server.js">
       <SubType>Code</SubType>
     </Compile>
@@ -30,8 +36,21 @@
     <Compile Include="server\utils\message.test.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="server\utils\users.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\utils\users.test.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\utils\valication.test.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\utils\validation.js">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="playground\" />
     <Folder Include="public\" />
     <Folder Include="public\js\" />
     <Folder Include="public\js\libs\" />
@@ -45,6 +64,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\css\styles.css" />
+    <Content Include="public\chat.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\index.html">
       <SubType>Code</SubType>
     </Content>
